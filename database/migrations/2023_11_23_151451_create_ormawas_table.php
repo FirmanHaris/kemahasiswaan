@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id('id_ormawa');
             $table->string('nama_ormawa', 100);
             $table->enum('status', ['aktif', 'non aktif'])->default('aktif');
-            $table->string('name');
-            $table->string('jabatan');
+
             $table->string('logo');
             $table->longText('detail_ormawa');
             $table->timestamps();
