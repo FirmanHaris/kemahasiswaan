@@ -22,7 +22,6 @@ RUN composer install --optimize-autoloader --no-dev
 # Set permissions
 RUN chown -R www-data:www-data storage bootstrap/cache
 
-RUN php artisan migrate:fresh --seed
 # Expose port 9000 dan jalankan PHP-FPM
 EXPOSE 80
 CMD ["php-fpm"]
